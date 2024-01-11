@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+</head>
+<body>
+    <h1>Product Management</h1>
+
+    <form id="productForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" required>
+
+        <label for="productModel">Product Model:</label>
+        <input type="text" id="productModel" required>
+
+        <label for="productBrand">Product Brand:</label>
+        <input type="text" id="productBrand" required>
+
+        <label for="productOrigin">Product Origin:</label>
+        <input type="text" id="productOrigin" required>
+
+        <label for="productLogo">Product Logo:</label>
+        <input type="text" id="productLogo" placeholder="URL">
+
+        <button type="button" onclick="addOrUpdateProduct()">Add / Update Product</button>
+    </form>
+
+    <ul id="productList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
